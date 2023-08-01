@@ -1,0 +1,41 @@
+.hero{width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;}
+.img { width: 90%;  height: auto; display: flex; align-items: center; justify-content: center;}
+.firstImg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 80px 0px 10px 0px;
+}
+.video{width: 90%;  height: auto; display: flex; align-items: center; justify-content: center;}
+.firstvideo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.cards{width: 90%;  height: auto; display: flex; align-items: center; justify-content: space-between; margin: 10vh 0px;}
+.cardimg {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+}
+.cards2{width: 90%; display: flex; justify-content: center;}
+.cards2 a{margin-right: 10px;}
+.cardimg2{width: 200px; height: 200px; border: 1px solid #D5B144;}
+.uygulamalar{margin: 50px 0;}
+.store{width: 110px; height: 33px; margin: 10px;}
+
+@media screen and (max-width: 1024px){
+    .cards{width: 80%;  height: auto; display: flex;flex-direction: column; align-items: center; justify-content: center;}
+    .cardimg {
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+    }
+    .cards2 a{margin-right: 0;}
+    .cards2{width: 90%;  height: auto; display: flex; align-items: center; justify-content: space-between;}
+    .cardimg2 {
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+    }
+}
