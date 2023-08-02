@@ -14,20 +14,20 @@
 }
 .cards{width: 90%;  height: auto; display: flex; align-items: center; justify-content: space-between; margin: 10vh 0px;}
 .cardimg {
-    width: 90%;
+    width: 100%;
     height: auto;
     object-fit: contain;
 }
 .cards2{width: 90%; display: flex; justify-content: center;}
 .cards2 a{margin-right: 10px;}
-.cardimg2{width: 200px; height: 200px; border: 1px solid #D5B144;}
+.cardimg2{width: 200px; height: 200px; border: 1px solid black;}
 .uygulamalar{margin: 50px 0;}
-.store{width: 110px; height: 33px; margin: 10px;}
+.store{width: 100px; height: 30px; margin: 10px;}
 
 @media screen and (max-width: 1024px){
-    .cards{width: 80%;  height: auto; display: flex;flex-direction: column; align-items: center; justify-content: center;}
+    .cards{width: 90%;  height: auto; display: flex;flex-direction: column; align-items: center; justify-content: center;}
     .cardimg {
-        width: 90%;
+        width: 100%;
         height: auto;
         object-fit: contain;
     }

@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="sag">
             <ul className={openNavbar ?  "gender active" : "gender"}>
                 <li ><Link to="/" className="anasayfa">Anasayfa</Link></li>
-                <li ><Link to="/" className="kadin">Kadın</Link></li>
+                <li ><Link to="/Kadin" className="kadin">Kadın</Link></li>
                 <li><Link to="/" className="erkek">Erkek</Link></li>
                 <li><Link to="/" className="cocuk">Çocuk</Link></li>
             </ul>

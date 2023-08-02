@@ -1,0 +1,7 @@
+.footer{display: flex; align-items: left; justify-content: space-around; width: 100%; padding: 20px; background-color: aliceblue;}
+.first{display: flex; flex-direction: column;}
+.phone{display: flex; margin-top: 10px;}
+@media screen and (max-width: 1024px){
+    .footer{display: flex; flex-direction: column;}
+    .first,.second,.third,.fourth{margin-bottom: 40px; justify-content: left;}
+}
