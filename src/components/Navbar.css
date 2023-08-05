@@ -11,20 +11,19 @@
     position: fixed;
     width: 100%;
     z-index: 10;
+    .right{margin-right: 20px;}
 }
 .sag{display: flex; align-items: center; justify-content: space-between; width: 60%;}
 .gender{ display: flex; list-style: none; width: 40%; justify-content: space-between;}
 .erkek,.kadin, .cocuk, .anasayfa{    text-decoration: none;}
 .right{display: flex; list-style: none;}
-.navbar-logo{  font-size: larger; color: black; margin-left: 10px; text-decoration: none; }
 .acKapaMenu{display: none;}
 .giris:hover p , .sepetim:hover p, .favoriler:hover p, .kadin:hover, .erkek:hover, .cocuk:hover, .anasayfa:hover{
     text-decoration: underline; /* Linkin üzerine gelindiğinde altı çizgili olacak */
 }
 @media screen and (max-width : 1024px){
     .sag{justify-content: flex-end; width: 90%;}
-    .right{margin-right: 30px;}
-    .acKapaMenu{display: block;}
+    .acKapaMenu{display: block; margin-right: 10px;}
     .gender{display: none; justify-content: space-around;}
     .gender.active{
         display: flex;
@@ -39,5 +38,4 @@
         background-color: rgb(242, 241, 241);
     }
     .cocuk{margin: 0;}
-
 }
