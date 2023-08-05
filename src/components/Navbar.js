@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-        <Link to="/" className='navbar-logo'><h3>RKY</h3></Link>
+        <Link to="/" className='font-bold text-xl'><h3>RKY</h3></Link>
         <div className="sag">
             <ul className={openNavbar ?  "gender active" : "gender"}>
                 <li ><Link to="/" className="anasayfa">Anasayfa</Link></li>
@@ -21,26 +21,26 @@ const Navbar = () => {
                 <li><Link to="/" className="cocuk">Çocuk</Link></li>
             </ul>
             <ul className='right'>
-                <li style={{marginRight: "15px"}}>
-                    <Link to="/" className='giris' style={{ textDecoration: "none" }}>
+                <li style={{marginRight: "15px", display: "flex", flexDirection: "column", alignItems: "center"}}>
+                    <Link to="/" className='giris' style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <BsPersonFill/>
-                        <p style={{fontSize: "small"}}>Giriş yap</p>
+                        <p style={{fontSize: "small", margin: 0}}>Giriş yap</p>
                     </Link>        
                 </li>
-                <li style={{marginRight: "15px"}}>
-                    <Link to="/" className='favoriler' style={{ textDecoration: "none" }}>
+                <li style={{marginRight: "15px", display: "flex", flexDirection: "column", alignItems: "center"}}>
+                    <Link to="/" className='giris' style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <AiFillHeart/>
-                        <p style={{fontSize: "small"}}>Favoriler</p>
-                    </Link> 
+                        <p style={{fontSize: "small", margin: 0}}>Favoriler</p>
+                    </Link>        
                 </li>
-                <li>
-                    <Link to="/" className='sepetim' style={{ textDecoration: "none" }}>
+                <li style={{marginRight: "15px", display: "flex", flexDirection: "column", alignItems: "center"}}>
+                    <Link to="/" className='giris' style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <BsFillBagFill/>
-                        <p style={{fontSize: "small"}}>Sepetim</p>
-                    </Link> 
+                        <p style={{fontSize: "small", margin: 0}}>Sepetim</p>
+                    </Link>        
                 </li>
             </ul>
-            <div className="acKapaMenu" onClick={handleClick} style={{fontSize:"larger", color:"purple"}}>
+            <div className="acKapaMenu" onClick={handleClick} style={{fontSize:"larger", color:"black"}}>
                 {openNavbar ? <FaTimes /> : <FaBars />}
             </div>
         </div>

@@ -14,28 +14,19 @@
 }
 .cards{width: 90%;  height: auto; display: flex; align-items: center; justify-content: space-between; margin: 10vh 0px;}
 .cardimg {
-    width: 100%;
+    width: 94%;
     height: auto;
     object-fit: contain;
 }
-.cards2{width: 90%; display: flex; justify-content: center;}
-.cards2 a{margin-right: 10px;}
-.cardimg2{width: 200px; height: 200px; border: 1px solid black;}
-.uygulamalar{margin: 50px 0;}
+.cardimg2{ border: 1px solid black;} 
 .store{width: 100px; height: 30px; margin: 10px;}
 
 @media screen and (max-width: 1024px){
-    .cards{width: 90%;  height: auto; display: flex;flex-direction: column; align-items: center; justify-content: center;}
+    .cards{width: 80%;  height: auto; display: flex;flex-direction: column; align-items: center; justify-content: center;}
     .cardimg {
         width: 100%;
         height: auto;
-        object-fit: contain;
-    }
-    .cards2 a{margin-right: 0;}
-    .cards2{width: 90%;  height: auto; display: flex; align-items: center; justify-content: space-between;}
-    .cardimg2 {
-        width: 90%;
-        height: auto;
+        margin-bottom: 10px;
         object-fit: contain;
     }
 }

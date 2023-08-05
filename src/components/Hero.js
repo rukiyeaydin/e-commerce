@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
       <div className="cards">
         <a href="/">
-          <img src={cocuk} alt="" className='cardimg'/>
+          <img src={cocuk} alt="" className='cardimg '/>
         </a>
         <a href="/">
           <img src={woman} alt="" className='cardimg'/>
@@ -34,24 +34,18 @@ const Hero = () => {
           <img src={man} alt="" className='cardimg'/>
         </a>
       </div>
-      <div className="cards2" >
-          <a href="/">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 w-7/12 gap-1 border-blue-600 md:w-7/12 sm:w-7/12" >
             <img src={card21} alt="" className='cardimg2'/>
-          </a>
-          <a href="/">
             <img src={card22} alt="" className='cardimg2'/>
-          </a>
-          <a href="/">
             <img src={card23} alt="" className='cardimg2'/>
-          </a>
-          <a href="/">
             <img src={card24} alt="" className='cardimg2'/>
-          </a>
       </div>
-      <div className="uygulamalar">
+      <div className="my-16">
         <p>Mobil Uygulamamızı İndirin</p>
-        <a href="/"><img src={playstore} alt="" className='store'/></a>
-        <a href="/"><img src={appstore} alt="" className='store'/></a>
+        <div className="flex">
+          <a href="https://play.google.com/store/games?device=phone" target="_blank"><img src={playstore} alt="" className='store'/></a>
+          <a href="https://www.apple.com/tr/app-store/" target="_blank"><img src={appstore} alt="" className='store'/></a>
+        </div>
       </div>
     </div>
   )
