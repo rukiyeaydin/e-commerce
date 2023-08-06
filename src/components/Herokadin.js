@@ -1,5 +1,4 @@
 import React from 'react';
-import "./Herokadin.css";
 import hugeSale from "../images/hugeSale.png";
 import ethnic from "../images/kadin/ethnic.webp";
 import greendress from "../images/kadin/greendress.webp";
@@ -10,7 +9,7 @@ import white from "../images/kadin/white.webp";
 const Herokadin = () => {
   return (
     <div className='w-full flex flex-col items-center content-center text-center'>
-      <div className="img"><img src={hugeSale} alt="" className='firstImg' /></div>
+      <a className="img" href='/Kadin'><img src={hugeSale} alt="" className='firstImg' /></a>
       <div className="my-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 mx-5">
             <div className="p-3 w-auto bg-gray-100">
@@ -158,16 +157,6 @@ const Herokadin = () => {
 
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
 
       
     </div>

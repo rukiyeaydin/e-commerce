@@ -17,12 +17,12 @@ const Navbar = () => {
             <ul className={openNavbar ?  "gender active" : "gender"}>
                 <li ><Link to="/" className="anasayfa">Anasayfa</Link></li>
                 <li ><Link to="/Kadin" className="kadin">Kadın</Link></li>
-                <li><Link to="/" className="erkek">Erkek</Link></li>
-                <li><Link to="/" className="cocuk">Çocuk</Link></li>
+                <li><Link to="/Erkek" className="erkek">Erkek</Link></li>
+                <li><Link to="/Cocuk" className="cocuk">Çocuk</Link></li>
             </ul>
             <ul className='right'>
                 <li style={{marginRight: "15px", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                    <Link to="/" className='giris' style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center" }}>
+                    <Link to="/Login" className='giris' style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <BsPersonFill/>
                         <p style={{fontSize: "small", margin: 0}}>Giriş yap</p>
                     </Link>        

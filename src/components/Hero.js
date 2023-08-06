@@ -17,20 +17,20 @@ import appstore from "../images/appstore.webp";
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="img"><img src={hugeSale} alt="" className='firstImg' /></div>
+      <a className="img" href='/Kadin'><img src={hugeSale} alt="" className='firstImg' /></a>
       <div className="video">
         <Video autoPlay loop className='firstvideo'>
           <source src={rkyautumn} type="video/mp4" />
         </Video>
       </div>
       <div className="cards">
-        <a href="/">
+        <a href="/Cocuk">
           <img src={cocuk} alt="" className='cardimg '/>
         </a>
-        <a href="/">
+        <a href="/Kadin">
           <img src={woman} alt="" className='cardimg'/>
         </a>
-        <a href="/">
+        <a href="/Erkek">
           <img src={man} alt="" className='cardimg'/>
         </a>
       </div>
