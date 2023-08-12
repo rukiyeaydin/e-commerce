@@ -59,7 +59,7 @@ const Heroerkek = () => {
             <div className="bg-gray-100 p-3">
                 <div className="w-auto h-64"><img class="w-64 h-64" src={kot}/></div>
                 <div className="">
-                    <h3 class="text-lg">KotCeket</h3>
+                    <h3 class="text-lg">Kot Ceket</h3>
                     <p class="space-x-2">
                         <span class="text-sm line-through text-gray-500">1200 TL</span>
                         <span class="text-2xl font-semibold">699.9 TL</span>
@@ -129,7 +129,7 @@ const Heroerkek = () => {
             <div className="bg-gray-100 p-3">
                 <div className="w-auto h-64"><img class="w-64 h-64" src={kot}/></div>
                 <div className="">
-                    <h3 class="text-lg">Arkası Desenli Elbise</h3>
+                    <h3 class="text-lg">Kot Ceket</h3>
                     <p class="space-x-2">
                         <span class="text-sm line-through text-gray-500">1200 TL</span>
                         <span class="text-2xl font-semibold">699.9 TL</span>

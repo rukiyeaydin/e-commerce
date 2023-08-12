@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Loginhero from "../components/Loginhero";
 
-
 const Login = () => {
   return (
     <div>
