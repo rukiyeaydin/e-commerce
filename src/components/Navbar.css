@@ -11,8 +11,8 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-    .right{margin-right: 20px;}
 }
+.right{margin-right: 20px;}
 .sag{display: flex; align-items: center; justify-content: space-between; width: 60%;}
 .gender{ display: flex; list-style: none; width: 40%; justify-content: space-between;}
 .erkek,.kadin, .cocuk, .anasayfa{    text-decoration: none;}
