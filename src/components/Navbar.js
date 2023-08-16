@@ -28,7 +28,7 @@ const Navbar = () => {
                     </Link>        
                 </li>
                 <li style={{marginRight: "15px", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                    <Link to="/" className='giris' style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center" }}>
+                    <Link to="/Favoriler" className='giris' style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <AiFillHeart/>
                         <p style={{fontSize: "small", margin: 0}}>Favoriler</p>
                     </Link>        
