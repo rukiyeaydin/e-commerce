@@ -5,8 +5,10 @@ import Kadin from './routes/Kadin';
 import Erkek from './routes/Erkek';
 import Cocuk from "./routes/Cocuk";
 import Login from "./routes/Login";
+import Favoriler from './routes/Favoriler';
 
 function App() {
+
   return (
     <>
     <Routes>
@@ -15,6 +17,7 @@ function App() {
       <Route path="/Erkek" element={<Erkek/>} />
       <Route path="/Cocuk" element={<Cocuk/>} />
       <Route path="/Login" element={<Login/>} />
+      <Route path="/Favoriler" element={<Favoriler/>} />
     </Routes>
     </>
   );
