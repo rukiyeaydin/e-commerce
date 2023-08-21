@@ -24,23 +24,23 @@ const Hero = () => {
         </Video>
       </div>
       <div className="cards">
-        <a href="/Cocuk">
+        <a href="/Cocuk" style={{marginRight:"10px"}}>
           <img src={cocuk} alt="" className='cardimg '/>
         </a>
-        <a href="/Kadin">
+        <a href="/Kadin" style={{marginRight:"10px"}}>
           <img src={woman} alt="" className='cardimg'/>
         </a>
         <a href="/Erkek">
           <img src={man} alt="" className='cardimg'/>
         </a>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 w-7/12 gap-1 border-blue-600 md:w-7/12 sm:w-7/12" >
+      {/* <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 w-7/12 gap-1 border-blue-600 md:w-7/12 sm:w-7/12" >
             <img src={card21} alt="" className='cardimg2'/>
             <img src={card22} alt="" className='cardimg2'/>
             <img src={card23} alt="" className='cardimg2'/>
             <img src={card24} alt="" className='cardimg2'/>
-      </div>
-      <div className="my-16">
+      </div> */}
+      <div className="mb-12">
         <p>Mobil Uygulamamızı İndirin</p>
         <div className="flex">
           <a href="https://play.google.com/store/games?device=phone" target="_blank"><img src={playstore} alt="" className='store'/></a>
