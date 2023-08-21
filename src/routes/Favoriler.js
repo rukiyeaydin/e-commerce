@@ -5,7 +5,7 @@ import { FaTrashAlt } from 'react-icons/fa';
 import data from '../components/Data'; // data.js dosyanızı doğru şekilde dahil ettiğinizden emin olun
 
 const Favoriler = () => {
-  const favoriteProducts = data.productItems.filter(item => item.isFavorite);
+  const favoriteProducts = data.productItems.concat(data.productItemsErkek).concat(data.productItemsCocuk).filter(item => item.isFavorite);
 
   return (
     <div>

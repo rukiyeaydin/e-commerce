@@ -1,13 +1,18 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Navbar from '../components/Navbar';
 import Footer from "../components/Footer";
 import data from '../components/Data'; // Import data from the Data.js file
 
 const Cocuk = () => {
-  
   const { productItemsCocuk} = data;
-
   const [favorites, setFavorites] = useState([]);
+
+  useEffect(() => {
+    const storedFavorites = localStorage.getItem('favorites');
+    if (storedFavorites) {
+      setFavorites(JSON.parse(storedFavorites));
+    }
+  }, []);
 
   const handleFavoriteClick = (itemId) => {
     if (favorites.includes(itemId)) {
@@ -15,6 +20,23 @@ const Cocuk = () => {
     } else {
       setFavorites([...favorites, itemId]);
     }
+
+    // Find the product item in data and toggle its isFavorite property
+    const updatedProductItems = productItemsCocuk.map(productItem => {
+      if (productItem.id === itemId) {
+        return {
+          ...productItem,
+          isFavorite: !productItem.isFavorite
+        };
+      }
+      return productItem;
+    });
+
+    // Update the data with the modified product items
+    data.productItemsCocuk = updatedProductItems;
+
+    // Save updated favorites list to localStorage
+    localStorage.setItem('favorites', JSON.stringify(updatedProductItems.filter(item => item.isFavorite).map(item => item.id)));
   };
 
   return (
