@@ -57,8 +57,8 @@ const Kadin = () => {
                         <span className="text-2xl font-semibold">{productItem.price} TL</span>
                     </p>
                     <div className="flex justify-between items-center pt-3 pb-2">
-                        <a href="#" className="px-4 py-2 bg-red-600 hover:bg-red-500 text-center text-sm text-white rounded duration-300">Sepete Ekle</a>
-                        <div className={`text-4xl duration-300 cursor-pointer ${favorites.includes(productItem.id) ? 'text-red-600' : 'text-gray-400 hover:text-red-600'}`}  onClick={() => handleFavoriteClick(productItem.id)}>&hearts;</div>
+                        <div className="px-4 py-2 bg-red-600 hover:bg-red-500 text-center text-sm text-white rounded duration-300 cursor-pointer">Sepete Ekle</div>
+                        <div className="px-4 py-2 text-red-600 bg-white border-solid border-2 border-red-600 hover:text-white hover:bg-red-600 text-center text-sm rounded duration-300 cursor-pointer" onClick={() => handleFavoriteClick(productItem.id)}>Kaydet &hearts;</div>
                     </div>
                     </div>
                 </div>

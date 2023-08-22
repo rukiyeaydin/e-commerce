@@ -263,6 +263,6 @@ const data = {
             isFavorite: false,
         },
       ]
-}
+};
 
 export default data; //export etmeyi unutma!!

@@ -34,7 +34,7 @@ const Navbar = () => {
                     </Link>        
                 </li>
                 <li style={{marginRight: "15px", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                    <Link to="/" className='giris' style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center" }}>
+                    <Link to="/Sepet" className='giris' style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <BsFillBagFill/>
                         <p style={{fontSize: "small", margin: 0}}>Sepetim</p>
                     </Link>        

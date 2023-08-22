@@ -1,11 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { FaTrashAlt } from 'react-icons/fa';
 import data from '../components/Data'; // data.js dosyanızı doğru şekilde dahil ettiğinizden emin olun
 
 const Favoriler = () => {
-  const favoriteProducts = data.productItems.concat(data.productItemsErkek).concat(data.productItemsCocuk).filter(item => item.isFavorite);
+  const [favoriteProducts, setFavoriteProducts] = useState(
+    data.productItems.concat(data.productItemsErkek).concat(data.productItemsCocuk).filter(item => item.isFavorite)
+  );
+  const removeItem = (itemId) => {
+    const updatedFavorites = favoriteProducts.filter(item => item.id !== itemId);
+    setFavoriteProducts(updatedFavorites);
+  };
 
   return (
     <div>
@@ -28,8 +34,8 @@ const Favoriler = () => {
                   <span className='text-md md:text-xl font-semibold'> {productItem.price}TL</span>
                 </p>
                 <div className='flex mt-3'>
-                  <a href='#' className='p-1 md:p-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300 w-24 mr-1'>Sepete Ekle</a>
-                  <a href='#' className='p-1 md:p-2 bg-red-600 hover:bg-amber-600 text-center text-white rounded duration-300 text-lg'><FaTrashAlt /></a>
+                  <div className='p-1 md:p-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300 w-24 mr-1'>Sepete Ekle</div>
+                  <div  className='p-1 md:p-2 bg-red-600 hover:bg-amber-600 text-center text-white rounded duration-300 text-lg' onClick={() => removeItem(productItem.id)}><FaTrashAlt /></div>
                 </div>
               </div>
             </a>
