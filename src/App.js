@@ -6,6 +6,7 @@ import Erkek from './routes/Erkek';
 import Cocuk from "./routes/Cocuk";
 import Login from "./routes/Login";
 import Favoriler from './routes/Favoriler';
+import Sepet from './routes/Sepet';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Route path="/Cocuk" element={<Cocuk/>} />
       <Route path="/Login" element={<Login/>} />
       <Route path="/Favoriler" element={<Favoriler/>} />
+      <Route path='/Sepet' element={<Sepet/>}/>
     </Routes>
     </>
   );
