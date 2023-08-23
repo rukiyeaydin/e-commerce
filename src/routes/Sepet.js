@@ -22,7 +22,7 @@ const Sepet = () => {
     const totalPrice = cartProducts.reduce((total, productItem, index) => {
         const quantity = quantities[index].quantity;
         return total + parseFloat(productItem.price) * quantity;
-    }, 0);
+    }, 0).toFixed(2);
 
     const handleQuantityChange = (productId, newQuantity) => {
         setQuantities(prevQuantities => prevQuantities.map(q => (q.id === productId ? { ...q, quantity: newQuantity } : q)));
@@ -31,7 +31,7 @@ const Sepet = () => {
     const profit = cartProducts.reduce((prof,productItem,index) => {
         const quantity = quantities[index].quantity;
         return prof + parseFloat(productItem.exprice-productItem.price)*quantity;
-    },0);
+    },0).toFixed(2);
 
 
   return (
