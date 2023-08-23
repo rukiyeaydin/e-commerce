@@ -26,6 +26,7 @@ const data = {
             price: "600",
             image: etnik,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "2",
@@ -34,6 +35,7 @@ const data = {
             price: "899.9",
             image: greendress,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "3",
@@ -42,6 +44,7 @@ const data = {
             price: "650",
             image: micky,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "4",
@@ -50,6 +53,7 @@ const data = {
             price: "699.9",
             image: tunic,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "5",
@@ -58,6 +62,7 @@ const data = {
             price: "710",
             image: white,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "6",
@@ -65,6 +70,7 @@ const data = {
             exprice: "1000",
             price: "600",
             image: etnik,
+            isInCart: false,
         },
         {
             id: "7",
@@ -73,6 +79,7 @@ const data = {
             price: "899.9",
             image: greendress,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "8",
@@ -80,6 +87,7 @@ const data = {
             exprice: "1120",
             price: "650",
             image: micky,
+            isInCart: false,
         },
         {
             id: "9",
@@ -88,6 +96,7 @@ const data = {
             price: "699.9",
             image: tunic,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "10",
@@ -96,6 +105,7 @@ const data = {
             price: "710",
             image: white,
             isFavorite: false,
+            isInCart: false,
         },
     ],
     productItemsErkek: [
@@ -106,6 +116,7 @@ const data = {
           price: "600",
           image: blue,
           isFavorite: false,
+          isInCart: false,
         },
         {
           id: "12",
@@ -114,6 +125,7 @@ const data = {
           price: "899.9",
           image: clas,
           isFavorite: false,
+          isInCart: false,
         },
         {
             id: "13",
@@ -122,6 +134,7 @@ const data = {
             price: "925",
             image: deri,
             isFavorite: false,
+            isInCart: false,
           },
           {
             id: "14",
@@ -130,6 +143,7 @@ const data = {
             price: "800",
             image: kot,
             isFavorite: false,
+            isInCart: false,
           },
           {
             id: "15",
@@ -138,6 +152,7 @@ const data = {
             price: "700",
             image: pantolon,
             isFavorite: false,
+            isInCart: false,
           },
           {
             id: "16",
@@ -146,6 +161,7 @@ const data = {
             price: "600",
             image: blue,
             isFavorite: false,
+            isInCart: false,
           },
           {
             id: "17",
@@ -154,6 +170,7 @@ const data = {
             price: "925",
             image: clas,
             isFavorite: false,
+            isInCart: false,
           },
           {
               id: "18",
@@ -162,6 +179,7 @@ const data = {
               price: "1200",
               image: deri,
               isFavorite: false,
+              isInCart: false,
             },
             {
               id: "19",
@@ -170,6 +188,7 @@ const data = {
               price: "800",
               image: kot,
               isFavorite: false,
+              isInCart: false,
             },
             {
               id: "20",
@@ -178,6 +197,7 @@ const data = {
               price: "700",
               image: pantolon,
               isFavorite: false,
+              isInCart: false,
             },
 
       ],
@@ -189,6 +209,7 @@ const data = {
             price: "600",
             image: beyaz,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "22",
@@ -197,6 +218,7 @@ const data = {
             price: "860",
             image: mor,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "23",
@@ -205,6 +227,7 @@ const data = {
             price: "680",
             image: minecraft,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "24",
@@ -213,6 +236,7 @@ const data = {
             price: "950",
             image: pile,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "25",
@@ -221,6 +245,7 @@ const data = {
             price: "599",
             image: siyah,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "26",
@@ -229,6 +254,7 @@ const data = {
             price: "600",
             image: beyaz,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "27",
@@ -237,6 +263,7 @@ const data = {
             price: "860",
             image: mor,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "28",
@@ -245,6 +272,7 @@ const data = {
             price: "680",
             image: minecraft,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "29",
@@ -253,6 +281,7 @@ const data = {
             price: "950",
             image: pile,
             isFavorite: false,
+            isInCart: false,
         },
         {
             id: "30",
@@ -261,6 +290,7 @@ const data = {
             price: "599",
             image: siyah,
             isFavorite: false,
+            isInCart: false,
         },
       ]
 };

@@ -8,6 +8,7 @@ const Kadin = () => {
 
   const { productItems } = data;
   const [favorites, setFavorites] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     const storedFavorites = localStorage.getItem('favorites');
@@ -15,6 +16,7 @@ const Kadin = () => {
       setFavorites(JSON.parse(storedFavorites));
     }
   }, []);
+
 
   const handleFavoriteClick = (itemId) => {
     if (favorites.includes(itemId)) {
@@ -41,6 +43,37 @@ const Kadin = () => {
     localStorage.setItem('favorites', JSON.stringify(updatedProductItems.filter(item => item.isFavorite).map(item => item.id)));
   };
 
+  useEffect(() => {
+    const storedCarts = localStorage.getItem('cart');
+    if (storedCarts) {
+      setCart(JSON.parse(storedCarts));
+    }
+  }, []);
+
+  const handleCartClick = (itemId) => {
+    if (cart.includes(itemId)) {
+      setCart(cart.filter(id => id !== itemId));
+    } else {
+      setCart([...cart, itemId]);
+    }
+
+    const updatedProductItems = productItems.map(productItem => {
+      if (productItem.id === itemId) {
+        return {
+          ...productItem,
+          isInCart: !productItem.isFavorite
+        };
+      }
+      return productItem;
+    });
+
+    data.productItems = updatedProductItems;
+
+    localStorage.setItem('cart', JSON.stringify(updatedProductItems.filter(item => item.isInCart).map(item => item.id)));
+  };
+
+
+
   return (
     <div>
       <Navbar/>
@@ -57,8 +90,8 @@ const Kadin = () => {
                         <span className="text-2xl font-semibold">{productItem.price} TL</span>
                     </p>
                     <div className="flex justify-between items-center pt-3 pb-2">
-                        <div className="px-4 py-2 bg-red-600 hover:bg-red-500 text-center text-sm text-white rounded duration-300 cursor-pointer">Sepete Ekle</div>
-                        <div className="px-4 py-2 text-red-600 bg-white border-solid border-2 border-red-600 hover:text-white hover:bg-red-600 text-center text-sm rounded duration-300 cursor-pointer" onClick={() => handleFavoriteClick(productItem.id)}>Kaydet &hearts;</div>
+                        <button className="px-4 py-2 bg-red-600 hover:bg-red-500 text-center text-sm text-white rounded duration-300" onClick={() => handleCartClick(productItem.id)}>Sepete Ekle</button>
+                        <button className="px-4 py-2 text-red-600 bg-white border-solid border-2 border-red-600 hover:text-white hover:bg-red-600 text-center text-sm rounded duration-300" onClick={() => handleFavoriteClick(productItem.id)}>Kaydet &hearts;</button>
                     </div>
                     </div>
                 </div>
