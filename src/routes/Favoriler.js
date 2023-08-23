@@ -19,7 +19,7 @@ const Favoriler = () => {
       {favoriteProducts.length === 0 ? 
       (
         <div className='h-screen flex flex-col items-center justify-center gap-1'>
-          <p>Sepette ürün bulunmamakta.</p>
+          <p>Favoriniz bulunmamakta.</p>
         </div>
       ) : 
       (
@@ -35,7 +35,7 @@ const Favoriler = () => {
                 </p>
                 <div className='flex mt-3'>
                   <div className='p-1 md:p-2 bg-blue-600 hover:bg-blue-400 text-center text-sm text-white rounded duration-300 w-24 mr-1'>Sepete Ekle</div>
-                  <div  className='p-1 md:p-2 bg-red-600 hover:bg-amber-600 text-center text-white rounded duration-300 text-lg' onClick={() => removeItem(productItem.id)}><FaTrashAlt /></div>
+                  <div  className='p-1 md:p-2 bg-red-600 hover:bg-red-500 text-center text-white rounded duration-300 text-lg' onClick={() => removeItem(productItem.id)}><FaTrashAlt /></div>
                 </div>
               </div>
             </a>
