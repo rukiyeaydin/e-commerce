@@ -20,6 +20,9 @@
 }
 .cardimg2{ border: 1px solid black;} 
 .store{width: 100px; height: 30px; margin: 10px;}
+.kadin,.cocuk{
+    margin-right: 10px;
+}
 
 @media screen and (max-width: 1024px){
     .cards{width: 90%;  height: auto; display: flex;flex-direction: column; align-items: center; justify-content: center;}
@@ -28,5 +31,8 @@
         height: auto;
         margin-bottom: 10px;
         object-fit: contain;
+    }
+    .cocuk,.kadin{
+        margin-right: 0px;
     }
 }

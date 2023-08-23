@@ -7,10 +7,6 @@ import cocuk from "../images/cocuk.png";
 import woman from "../images/woman.png";
 import man from "../images/man.png";
 import "react-html5video/dist/styles.css";
-import card21 from "../images/card21.png";
-import card22 from "../images/card22.png";
-import card23 from "../images/card23.png";
-import card24 from "../images/card24.png";
 import playstore from "../images/playstore.webp";
 import appstore from "../images/appstore.webp";
 
@@ -24,10 +20,10 @@ const Hero = () => {
         </Video>
       </div>
       <div className="cards">
-        <a href="/Cocuk" style={{marginRight:"10px"}}>
+        <a href="/Cocuk" className='cocuk'>
           <img src={cocuk} alt="" className='cardimg '/>
         </a>
-        <a href="/Kadin" style={{marginRight:"10px"}}>
+        <a href="/Kadin" className='kadin'>
           <img src={woman} alt="" className='cardimg'/>
         </a>
         <a href="/Erkek">
