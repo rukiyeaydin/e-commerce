@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
-import white from "../images/kadin/white.webp";
 import { FaTrashAlt } from 'react-icons/fa';
 import data from '../components/Data';
 
@@ -42,7 +41,7 @@ const Sepet = () => {
                 <p>Sepette ürün bulunmamakta.</p>
             </div>
         ) : (
-        <div className={cartProducts.length <= 1 ? "h-screen flex flex-col items-center justify-center gap-1" : "h-max flex flex-col items-center justify-center gap-1"} style={{ backgroundColor: "#f2f2f2", minHeight:"100%" }}>
+        <div className={cartProducts.length <= 2 ? "h-screen flex flex-col items-center justify-center gap-1" : "h-max flex flex-col items-center justify-center gap-1"} style={{ backgroundColor: "#f2f2f2", minHeight:"100%" }}>
             <div className="my-36 flex flex-col md:flex-row items-center justify-center">
                 <div className="p-2 mr-0 mb-4 bg-white md:mr-8 md:mb-0">
                     {cartProducts.map((productItem, index) => (
